@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='windows-1252' standalone='yes'?>
+<MetaData>
+<ProjectTemplate>
+  <Title localize="no">TDD Caraya Project</Title>
+  <Description localize="no">Allows developers to create a test driven development project.  Depends on JKI Caraya package installed.</Description>
+  <Filters localize="no">Templates:TDD Project;Templates:Desktop:TDD Project</Filters>
+  <LocationPath>TDD Test</LocationPath>
+  <ListboxImagePath>images/caraya-logo.png</ListboxImagePath>
+  <ProjectPath>TDD.lvproj</ProjectPath>
+  <Keywords localize="no">tdd;test driven development;unit test;unit testing;Caraya;template</Keywords>
+  <DocumentationPath></DocumentationPath>
+  <CustomVIMode/>
+  <CustomVIPath/>
+  <SortPriority/>
+  <MetaDataClass/>
+  <HidePrefix/>
+  <HideIconOverlay/>
+</ProjectTemplate>
+</MetaData>
