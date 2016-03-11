@@ -1,5 +1,5 @@
 # TDD-Caraya
-LabVIEW Test Driven Development project template and support (depends on JKI Caraya unit test framework)
+LabVIEW Test Driven Development project template and support (depends on JKI Caraya unit test framework).  *** This Project is under construction - do not use yet ***
 
 The TDD-Caraya project template for LabVIEW enables fast development of unit tests that exist on the same diagram as your actual source code.  This results in easily readable code that does not add execution overhead or source code complexity/configuration management, and has access to private data and methods that are available to the VI.
 
