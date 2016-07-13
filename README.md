@@ -21,10 +21,7 @@ The test assertion is inside of a conditional disable structure.  Notice in the 
 ![Set TDD Flag](https://github.com/omarmussa/TDD-Caraya/blob/master/Images/Set%20TDD%20Flag.png)
 
 
-3.  One other built in project feature is the ability to autorun your tests as a pre-build script.  The VI provided needs to be customized to support running your build test suite but it is a starting point. 
-
-![Run Pre-Build](https://github.com/omarmussa/TDD-Caraya/blob/master/Images/Pre-Build%20Action.png)
-
+3.  One other built in project feature is the ability to autorun your tests as a pre-build action.  The VI will automatically discover and run any Caraya tests in the project prior to running the build (for non-RT targets).  The VI is located in the "Build Support" folder and is called "Pre-Build Action.vi".
 
 The entire TDD Project is a template that is distributed as a VIP package and can be installed into LabVIEW so that you can create a new project using the “Create Project” dialog.
 
