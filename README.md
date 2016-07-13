@@ -3,9 +3,10 @@ LabVIEW Test Driven Development project template and support (depends on JKI Car
 
 The TDD-Caraya project template for LabVIEW enables fast development of unit tests that exist on the same diagram as your actual source code.  This results in easily readable code that does not add execution overhead or source code complexity/configuration management, and has access to private data and methods that are available to the VI.  The goal of TDD-Caraya is to enable TDD/XP programming.
 
-There are basically three features of the project template (and you are able to completely customize this template as needed).
+There are three features of the project template (and you are able to completely customize this template as needed).
 
-1.  A template for creating new VIs where the test vector is in-line with the functional code under test.  By design new VIs generated from the VI template fail a default test implementation.
+#Test Template:
+A template for creating new VIs where the test vector is in-line with the functional code under test.  By design new VIs generated from the VI template fail a default test implementation.
 
 ![Test Template](https://github.com/omarmussa/TDD-Caraya/blob/master/Images/TDD%20VI%20Template.png)
 
@@ -16,12 +17,13 @@ Here’s an example of a finished VI:
 
 The test assertion is inside of a conditional disable structure.  Notice in the example the inputs are also being conditionally configured and this configuration data can come from default values on the front panel, constants, configuration files, etc at the developers discretion.  Additionally, there is a check for if the test is running top level to avoid the test code from running if the VI is running as a subVI of another test.  Since the assertion test is scoped within the VI, the test can run regardless of whether the VI is privately scoped or not.  Additionally, it will get stripped from compilation so you won’t have to worry about it affecting run time performance.
 
-2.  The project has a VI that can set the TDD flag so that you can run.  In “TDD Mode”, running the VI will run the Caraya assertion.  Resetting the flag will run the VI normally (for development/simulation probe).  You can change this property manually in your project or by using the “Set TDD Flag.vi” included in the TDD Project Template.
+#TDD Flag
+The project has a VI that can set the TDD flag so that you can run.  In “TDD Mode”, running the VI will run the Caraya assertion.  Resetting the flag will run the VI normally (for development/simulation probe).  You can change this property manually in your project or by using the “Set TDD Flag.vi” included in the TDD Project Template.
 
 ![Set TDD Flag](https://github.com/omarmussa/TDD-Caraya/blob/master/Images/Set%20TDD%20Flag.png)
 
-
-3.  One other built in project feature is the ability to autorun your tests as a pre-build action.  The VI will automatically discover and run any Caraya tests in the project prior to running the build (for non-RT targets).  The VI is located in the "Build Support" folder and is called "Pre-Build Action.vi".
+#Pre-Build Action
+One other built in project feature is the ability to autorun your tests as a pre-build action.  The VI will automatically discover and run any Caraya tests in the project prior to running the build (for non-RT targets).  The VI is located in the "Build Support" folder and is called "Pre-Build Action.vi".
 
 The entire TDD Project is a template that is distributed as a VIP package and can be installed into LabVIEW so that you can create a new project using the “Create Project” dialog.
 
