@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2016-03-09 10:52:01" Modified_Date="2016-03-10 20:50:51" Creator="Omar Mussa" Comments="" ID="ab77609504beab54c2c1b0f5d3142126">
+<VI_Package_Builder_Settings Version="0.6" Created_Date="2016-03-09 10:52:01" Modified_Date="2016-07-13 15:16:32" Creator="Omar Mussa" Comments="" ID="85bb8ec9ad9d8e383c188263966acd23">
   <Library_General_Settings>
     <Package_File_Name>Caraya_TDD_Project_Template</Package_File_Name>
-    <Library_Version>1.0.0.6</Library_Version>
+    <Library_Version>1.0.0.8</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>Source</Library_Source_Folder>
     <Library_Output_Folder>Build</Library_Output_Folder>
@@ -17,8 +17,8 @@
   </Library_General_Settings>
   <Advanced_Settings>
     <Package_Dependencies>
-      <External_Dependencies>jki_lib_caraya &gt;= 0.2.1.19</External_Dependencies>
-      <Direct_Dependencies>jki_lib_caraya-0.2.1.19</Direct_Dependencies>
+      <External_Dependencies>jki_lib_caraya &gt;= 0.4.1.22</External_Dependencies>
+      <Direct_Dependencies>jki_lib_caraya-0.4.1.22</Direct_Dependencies>
     </Package_Dependencies>
     <Custom_Action_VIs>
       <Pre-Build_VI/>
@@ -35,7 +35,7 @@
       <Copyright>Copyright (c) 2016, Omar Mussa</Copyright>
       <Packager/>
       <URL/>
-      <Release_Notes>Initial release for creating TDD focused projects using Caraya.</Release_Notes>
+      <Release_Notes>Added Pre-Build support for autodiscovering Caraya tests in project.</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -127,9 +127,6 @@
         <Namespace_Type>Prefix</Namespace_Type>
         <Namespace/>
       </Namespace_Overrides>
-      <Exclusions>
-        <Path>build test reports</Path>
-      </Exclusions>
     </Source_Files>
     <License_Agreement_Filepath/>
     <Licensing_and_Activation>
